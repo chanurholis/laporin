@@ -17,7 +17,28 @@ Route::get('/', function () {
     return view('public.index');
 });
 
+Route::get('/admin', function () {
+    return redirect(route('admin.dashboard'));
+});
+
+Route::get('/home', function () {
+    return redirect(route('admin.dashboard'));
+});
+
+Route::get('/term-of-use', function () {
+    return view('public.term-of-use');
+});
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin', 'HomeController@index')->name('admin');
+Route::name('admin.')->prefix('admin')->middleware('auth')->group(function () {
+    Route::get('dashboard', 'HomeController')->name('dashboard');
+});
+
+Route::name('login.')->prefix('login')->group(function () {
+    Route::get('{provider}', 'Auth\AuthController@redirectToProvider')->name('provider');
+    Route::get('{provider}/callback', 'Auth\AuthController@handleProviderCallback')->name('provider-callback');
+});
+
+Route::name('register.')->prefix('register')->group(function () {
+});
