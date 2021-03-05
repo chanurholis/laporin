@@ -4,11 +4,12 @@
         <a href="index.html">{{ config('app.name') }}</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">{{ config('app.nickname') }}</a>
+        <a href="index.html">{{ 'LP' }}</a>
     </div>
     <ul class="sidebar-menu">
         <li class="menu-header active">Dashboard</li>
-        <li class="active"><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
+        <li><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
+
         <li class="menu-header">Starter</li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
@@ -44,6 +45,10 @@
                 <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
                 </ul>
             </li>
+
+            <li class="menu-header active">Pengguna</li>
+            <li><a class="nav-link" href="{{ route('admin.users.index') }}"><i class="fas fa-users"></i> <span>Pengguna</span></a></li>
+
         </ul>
     </aside>
 </div>

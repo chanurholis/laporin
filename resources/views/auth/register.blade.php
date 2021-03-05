@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- CSS Libraries -->
-    <link rel="stylesheet" href="http://172.20.10.3/TEMPLATE/stisla/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="http://localhost/TEMPLATE/stisla/node_modules/bootstrap-social/bootstrap-social.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="http://172.20.10.3/TEMPLATE/stisla/assets/css/style.css">
-    <link rel="stylesheet" href="http://172.20.10.3/TEMPLATE/stisla/assets/css/components.css">
+    <link rel="stylesheet" href="http://localhost/TEMPLATE/stisla/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost/TEMPLATE/stisla/assets/css/components.css">
 </head>
 
 <body>
@@ -101,15 +101,15 @@
 
                                 <div class="row">
                                     <div class="form-group col-6">
-                                        <label for="username">Username</label>
-                                        <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" autofocus placeholder="Username">
+                                        <label for="username">Nama Pengguna</label>
+                                        <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" autofocus placeholder="Nama Pengguna">
                                         <div class="invalid-feedback">
                                             @error('username') {{ $message }} @enderror
                                         </div>
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="email">Email</label>
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="email@example.com">
+                                        <label for="email">Surel</label>
+                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="surel@contoh.com">
                                         <div class="invalid-feedback">
                                             @error('email') {{ $message }} @enderror
                                         </div>
@@ -118,7 +118,7 @@
 
                                 <div class="row">
                                     <div class="form-group col-6">
-                                        <label for="password" class="d-block">Password</label>
+                                        <label for="password" class="d-block">Kata Sandi</label>
                                         <input id="password" type="password" class="form-control pwstrength @error('password') is-invalid @enderror" data-indicator="pwindicator" name="password" placeholder="Minimal 8 karakter & berisi alfanumerik">
                                         <div id="pwindicator" class="pwindicator">
                                             <div class="bar"></div>
@@ -129,7 +129,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="password2" class="d-block">Password Confirmation</label>
+                                        <label for="password2" class="d-block">Konfirmasi Kata Sandi</label>
                                         <input id="password2" type="password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" placeholder="Minimal 8 karakter & berisi alfanumerik">
                                         <div class="invalid-feedback">
                                             @error('password') {{ $message }} @enderror
@@ -146,7 +146,7 @@
 
                                 <div class="form-group">
                                     <button type="sdubmit" class="btn btn-primary btn-lg btn-block">
-                                    Register
+                                    Daftar
                                     </button>
                                 </div>
                                 </form>
@@ -168,13 +168,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="http://172.20.10.3/TEMPLATE/stisla/assets/js/stisla.js"></script>
+    <script src="http://localhost/TEMPLATE/stisla/assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
 
     <!-- Template JS File -->
-    <script src="http://172.20.10.3/TEMPLATE/stisla/assets/js/scripts.js"></script>
-    <script src="http://172.20.10.3/TEMPLATE/stisla/assets/js/custom.js"></script>
+    <script src="http://localhost/TEMPLATE/stisla/assets/js/scripts.js"></script>
+    <script src="http://localhost/TEMPLATE/stisla/assets/js/custom.js"></script>
 
     <!-- Page Specific JS File -->
 </body>

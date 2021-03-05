@@ -1,6 +1,6 @@
-@include('layouts.admin.partials.header')
+@include('admin.partials.header')
         
-    @include('layouts.admin.partials.sidebar')
+    @include('admin.partials.sidebar')
 
     <!-- Main Content -->
     <div class="main-content">
@@ -15,4 +15,4 @@
         </section>
     </div>
 
-@include('layouts.admin.partials.footer')
+@include('admin.partials.footer')

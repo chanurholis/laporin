@@ -33,6 +33,10 @@ Auth::routes();
 
 Route::name('admin.')->prefix('admin')->middleware('auth')->group(function () {
     Route::get('dashboard', 'HomeController')->name('dashboard');
+
+    Route::resource('users', 'UserController', [
+        'index' => 'users'
+    ]);
 });
 
 Route::name('login.')->prefix('login')->group(function () {
